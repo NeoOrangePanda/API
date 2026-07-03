@@ -1,1 +1,1 @@
-HF_API_KEY = "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"
+HF_API_KEY = "Secret :)"
