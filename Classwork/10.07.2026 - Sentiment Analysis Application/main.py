@@ -59,7 +59,7 @@ def show_flow(q1,q2):
     print("\n4) Why similarity is high/low for THIS pair")
     print("   - Direct matches:",", ".join(shared)) if shared else print("   - The model used overall meaning patterns, not exact word matches.")
 
-def run(q1,q2,title):
+def run(q1, q2, title):
     print(f"\n--- {title} ---")
     base=hf(q1,q2)
     strong=sorted({w for w in clean(q1) if len(w)>=4} & {w for w in clean(q2) if len(w)>=4})
